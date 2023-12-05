@@ -11,27 +11,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="https://script0s.github.io/TheCult/" element={<Home />} />
-        <Route
-          path="https://script0s.github.io/TheCult/menu"
-          element={<Menu />}
-        />
-        <Route
-          path="https://script0s.github.io/TheCult/bookings"
-          element={<Bookings />}
-        />
-        <Route
-          path="https://script0s.github.io/TheCult/forguests"
-          element={<ForGuests />}
-        />
-        <Route
-          path="https://script0s.github.io/TheCult/ourstory"
-          element={<OurStory />}
-        />
-        <Route
-          path="https://script0s.github.io/TheCult/none"
-          element={<None />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/bookings" element={<Bookings />} />
+        <Route path="/forguests" element={<ForGuests />} />
+        <Route path="/ourstory" element={<OurStory />} />
+        <Route path="/none" element={<None />} />
       </Routes>
     </BrowserRouter>
   );
