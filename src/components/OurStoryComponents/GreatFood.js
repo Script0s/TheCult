@@ -7,7 +7,7 @@ import ourStoryVideo from "../../video/OurStoryVideo.mp4";
 import useNavigationButton from "../useNavigationButton";
 
 const GreatFood = () => {
-  const navigateToMenu = useNavigationButton("/menu");
+  const navigateToMenu = useNavigationButton("/thecult/menu");
   const categories = [
     "BREAKFASTS",
     "STARTERS",

@@ -15,20 +15,20 @@ import desktopDesserts from "../../img/HomePage/ViewMenu/DessertsDesktop.svg";
 import useNavigationButton from "../useNavigationButton";
 
 const ViewMenu = () => {
-  const navigateToMenu = useNavigationButton("/menu");
+  const navigateToMenu = useNavigationButton("/thecult/menu");
   return (
     <div className="View-menu">
       <div className="desktop-bigImg">
-        <Link to="/menu#ramensList">
+        <Link to="/thecult/menu#ramensList">
           <img src={desktopRamen} alt="" />
         </Link>
-        <Link to="/menu#noodlesList">
+        <Link to="/thecult/menu#noodlesList">
           <img src={desktopNoodles} alt="" />
         </Link>
-        <Link to="/menu#startersList">
+        <Link to="/thecult/menu#startersList">
           <img src={desktopStarters} alt="" />
         </Link>
-        <Link to="/menu#dessertsList">
+        <Link to="/thecult/menu#dessertsList">
           <img src={desktopDesserts} alt="" />
         </Link>
       </div>
@@ -45,7 +45,7 @@ const ViewMenu = () => {
           </p>
         </div>
         <div className="mobileViewMenu-img">
-          <Link to="/menu#ramensList">
+          <Link to="/thecult/menu#ramensList">
             <div className="category-img">
               <img className="category-img1" src={mobileRamen1} alt="" />
               <img
@@ -55,7 +55,7 @@ const ViewMenu = () => {
               />
             </div>
           </Link>
-          <Link to="/menu#noodlesList">
+          <Link to="/thecult/menu#noodlesList">
             <div className="category-img">
               <img className="category-img1" src={mobileNoodles1} alt="" />
               <img
@@ -65,7 +65,7 @@ const ViewMenu = () => {
               />
             </div>
           </Link>
-          <Link to="/menu#startersList">
+          <Link to="/thecult/menu#startersList">
             <div className="category-img">
               <img className="category-img1" src={mobileStarters1} alt="" />
               <img
@@ -75,7 +75,7 @@ const ViewMenu = () => {
               />
             </div>
           </Link>
-          <Link to="/menu#dessertsList">
+          <Link to="/thecult/menu#dessertsList">
             <div className="category-img">
               <img className="category-img1" src={mobileDesserts1} alt="" />
               <img

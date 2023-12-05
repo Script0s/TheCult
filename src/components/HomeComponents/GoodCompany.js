@@ -5,7 +5,7 @@ import knife from "../../img/HomePage/GoodCompany/Knife.svg";
 import useNavigationButton from "../useNavigationButton";
 
 const GoodCompany = () => {
-  const navigateToBookings = useNavigationButton("/bookings");
+  const navigateToBookings = useNavigationButton("/thecult/bookings");
   return (
     <div className="gatherIn-goodCompany">
       <div className="theCult-info-container">

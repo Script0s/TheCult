@@ -6,7 +6,7 @@ import gallery from "../../img/OurStoryPage/MainWizard/Gallery.svg";
 import useNavigationButton from "../useNavigationButton";
 
 const MainWizard = () => {
-  const navigateToMenu = useNavigationButton("/menu");
+  const navigateToMenu = useNavigationButton("/thecult/menu");
   return (
     <div className="mainWizard-container">
       <div className="infos-container">

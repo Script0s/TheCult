@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const usePopup = (timeoutDuration = 2000, redirectPath = "/none") => {
+const usePopup = (timeoutDuration = 2000, redirectPath = "/thecult/none") => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const navigate = useNavigate(); // Hook pour la navigation
+  const navigate = useNavigate();
 
   useEffect(() => {
     let timer;
     if (isPopupVisible) {
       timer = setTimeout(() => {
         setIsPopupVisible(false);
-        navigate(redirectPath); // Redirige après la fermeture de la popup
+        navigate(redirectPath);
+        window.scrollTo(0, 0); // Remonter en haut après la redirection
       }, timeoutDuration);
     }
     return () => {

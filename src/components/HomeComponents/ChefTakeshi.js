@@ -9,7 +9,7 @@ import desktopShrimp from "../../img/HomePage/ChefTakeshi/desktopShrimp.svg";
 import useNavigationButton from "../useNavigationButton";
 
 const ChefTakeshi = () => {
-  const navigateToOurStory = useNavigationButton("/ourstory");
+  const navigateToOurStory = useNavigationButton("/thecult/ourstory");
   return (
     <div className="chefTakeshi-container">
       <div className="desktopChefTakeshiImg-container">

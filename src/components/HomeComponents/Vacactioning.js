@@ -15,7 +15,7 @@ import useNavigationButton from "../useNavigationButton";
 import homeVideo from "../../video/HomeVideo.mp4";
 
 const Vacationing = () => {
-  const navigateToBookings = useNavigationButton("/bookings");
+  const navigateToBookings = useNavigationButton("/thecult/bookings");
 
   const containerRef = useRef(null);
 
