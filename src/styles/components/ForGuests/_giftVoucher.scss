@@ -1,0 +1,77 @@
+.GiftVoucher-container{
+    text-align: center;
+    .infos-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    .title-GiftVoucher{
+        padding-top: 5vw;
+        padding-bottom: 6vw;
+    }
+        .info{
+            width: 81.25vw;
+        }
+        .info2{
+            margin-bottom: 3vw;
+        }
+    }
+    .giftVoucherMobile{
+        margin-top: 4vw;
+        width: 100%;
+    }
+    .DesktopHisoka{
+        display: none;
+    }
+    .DesktopPinkImg{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .GiftVoucher-container{
+        margin-top: 7vw;
+        position: relative;
+        text-align: start;
+        .infos-container{
+            position: absolute;
+            top: 6.5vw;
+            right: 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        .title-GiftVoucher{
+            padding-top: 0;
+            padding-bottom: 2vw;
+        }
+            .info{
+                width: auto;
+            }
+            .info1{
+                width: 34vw;
+            }
+            .info2{
+                width: 30vw;
+                padding-bottom: 0;
+                margin-bottom: 1vw;
+            }
+        }
+        .giftVoucherMobile{
+            display: none;
+        }
+        .DesktopHisoka{
+            display: block;
+            width: 59.67vw;
+            transform: translateX(-50vw);
+            transition: transform 0.5s ease-out;
+        }
+        .DesktopPinkImg{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            align-items: center;
+            z-index: -1;
+        }
+    }
+}

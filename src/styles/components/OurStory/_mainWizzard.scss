@@ -1,0 +1,247 @@
+.mainWizard-container{
+    overflow: hidden;
+    .infos-container{
+        .info-text{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        h1{
+            margin:  6.25vw 0;
+        }
+        .info1{
+            width:  73.75vw;
+        }
+        .info2{
+            width: 69vw;
+            padding-bottom: 0;
+            margin-bottom: 6.25vw;
+        }
+        }
+        .mainWizard-img{
+            position: relative;
+            display: flex;
+            margin-top: -4vw;
+            border-bottom: 2px solid black;
+            .chips{
+                position: absolute;
+                top: 0;
+                left: 3%;
+                width: 105%;
+                transform: rotate(330deg);
+                animation: chipsMobileAnimate 10s infinite linear;
+                z-index: -1;
+            }
+            .heroe{
+                width: 100%;
+                margin-top: 27%;
+            }
+            .leaf{
+                position: absolute;
+                top: 36%;
+                right: 0;
+                width: 25%;
+                transform: rotate(18deg);
+                animation: leafMobileAnimate 10s infinite linear;
+            }
+            .gallery{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 35%;
+                z-index: -1;
+            }
+        }
+    }
+    .text-animate{
+        width: 100%;
+        display: flex;
+        h1{
+            margin: 5px;
+            animation: bannerAnimate2 3s linear infinite;
+        }
+    }
+}
+@keyframes bannerAnimate2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-110%);
+    }
+}
+@keyframes chipsMobileAnimate {
+    0% {
+        transform: translateY(0)rotate(330deg);
+        animation-timing-function: ease-in-out;
+    }
+    25% {
+        transform: translateY(-4px)rotate(334deg);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: translateY(4px)rotate(326deg);
+        animation-timing-function: ease-in-out;
+    }
+    75% {
+        transform: translateY(-4px)rotate(334deg);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: translateY(0)rotate(330deg);
+    }
+}
+@keyframes leafMobileAnimate {
+    0% {
+        transform: rotate(18deg);
+        animation-timing-function: ease-in-out;
+    }
+    25% {
+        transform: rotate(10deg);
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        transform: rotate(26deg);
+        animation-timing-function: ease-in-out;
+    }
+    75% {
+        transform: rotate(10deg);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: rotate(18deg);
+    }
+}
+@media (min-width: 768px){
+    .mainWizard-container{
+        overflow: hidden;
+        .infos-container{
+            position: relative;
+            .info-text{
+                position: absolute;
+                top: 32vw;
+                left: 60vw;
+                text-align: start;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                z-index: 2;
+            h1{
+                margin:  0 0;
+                margin-bottom: 2vw;
+            }
+            .info1{
+                width: 26vw;
+                min-width: 304px;
+            }
+            .info2{
+                width: 23.92vw;
+                min-width: 287px;
+                padding-bottom: 0;
+                margin-bottom: 2vw;
+            }
+            }
+            .mainWizard-img{
+                position: relative;
+                display: flex;
+                margin-top: -4vw;
+                border-bottom: 2px solid black;
+                .chips{
+                    position: absolute;
+                    top: 8vw;
+                    left: auto;
+                    right: -6.3vw;
+                    width: 47.67vw;
+                    transform: rotate(0deg);
+                    animation: chipsDesktopAnimate 10s infinite linear;
+                    z-index: -1;
+                }
+                .heroe{
+                    width: 56.25vw;
+                    margin-top: 3.2vw;
+                }
+                .leaf{
+                    position: absolute;
+                    top: 36vw;
+                    right: -3vw;
+                    width: 15.25vw;
+                    transform: rotate(0deg);
+                    animation: leafDesktopAnimate 10s infinite linear;
+                }
+                .gallery{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 20.25vw;
+                    z-index: -1;
+                }
+            }
+        }
+        .text-animate{
+            width: 100%;
+            display: flex;
+            h1{
+                margin: 5px;
+                animation: bannerAnimate2 3s linear infinite;
+            }
+        }
+    }
+    @keyframes bannerAnimate2 {
+        0% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(-110%);
+        }
+    }
+    @keyframes chipsDesktopAnimate {
+        0% {
+            transform: translateY(0)rotate(349deg);
+            animation-timing-function: ease-in-out;
+        }
+        25% {
+            transform: translateY(-4px)rotate(353deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: translateY(4px)rotate(345deg);
+            animation-timing-function: ease-in-out;
+        }
+        75% {
+            transform: translateY(-4px)rotate(353deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: translateY(0)rotate(349deg);
+        }
+    }
+    @keyframes leafDesktopAnimate {
+        0% {
+            transform: rotate(0deg);
+            animation-timing-function: ease-in-out;
+        }
+        25% {
+            transform: rotate(-8deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(8deg);
+            animation-timing-function: ease-in-out;
+        }
+        75% {
+            transform: rotate(-8deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}

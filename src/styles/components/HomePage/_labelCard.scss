@@ -1,0 +1,110 @@
+.label-card-list{
+    text-align: center;
+    margin-top: 6.72vw;
+    .labelMobile{
+        margin: 20px;
+        width: 85%;
+    }
+    .labelDesktop{
+        display: none;
+    }
+    .labelCard-container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        .labelCard{
+            margin-top: 20px;
+            .label-img{
+                height: 150px;
+                img{
+                    height: 100%;
+                }
+            }
+            .labelCard-info{
+                margin-top: 20px;
+                p{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+            }
+    }
+}
+@media (min-width: 768px){
+.label-card-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .labelMobile{
+        display: none;
+    }
+    .labelDesktop{
+        display: block;
+        width: 93.084vw;
+    }
+    .labelCard-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 5vw;
+        .labelCard{
+            padding-left: 2.7vw;
+            padding-right: 2.7vw;
+            .label-img{
+                height: clamp(120px, 15vw, 500px);
+                img{
+                    height: 100%;
+                }
+            }
+            .labelCard-info{
+                margin-top: 3.2vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    font-size: clamp(18px, 1.5vw, 51px);
+                    line-height: clamp(20px, 1.665vw, 57px);
+                    margin-bottom: 1vw;
+                }
+                p{
+                    margin-left: 0;
+                    margin-right: 0;
+                    line-height: clamp(14px, 1.163vw, 40px);
+                    padding-bottom: 0;
+                }
+            }
+            }
+        .labelCardLEGENDARY{
+            h2{
+                width: clamp(125px, 10.417vw, 358px);
+            }
+            p{
+                width: 12.25vw;
+            }
+        }
+        .labelCardSUPER{
+            h2{
+                width: clamp(116px, 9.667vw, 333px);
+            }
+            p{
+                width: 12.25vw;
+            }
+        }
+        .labelCardGLUTEN{
+            h2{
+                width: clamp(116px, 9.667vw, 333px);
+            }
+            p{
+                width: 12.25vw;
+            }
+        }
+        .labelCardHEALTHY{
+            h2{
+                width: clamp(116px, 9.667vw, 333px);
+            }
+            p{
+                width: 11vw;
+            }
+        }
+    }
+}
+}

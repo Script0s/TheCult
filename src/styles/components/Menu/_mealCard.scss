@@ -1,0 +1,142 @@
+.mealCardList{
+    padding-bottom: 6.25vw;
+    position: relative;
+    background-color: #FAF5E5;
+    .category-title{
+        text-align: center;
+        margin-bottom: 6.25vw;
+    }
+    .swiper{
+        margin-left: 4vw;
+    }
+    .swiper-slide{
+        width: auto;
+    }
+.mealCard{
+    background-color: #201b19;
+    width: 87.508vw;
+    height: 131.263vw;
+    user-select: none;
+    margin-right: 4vw;
+    .meal-img{
+        position: relative;
+        height: 53.573%;
+        .image{
+            height: 100%;
+            width: 100%;
+            transition: opacity .7s;
+        }
+        .desktopImageUrl{
+            opacity: 1; 
+        }
+        .drawingImageUrl{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0; 
+        }
+        &:hover .desktopImageUrl{
+            opacity: 0; 
+        }
+        &:hover .drawingImageUrl{
+            opacity: 1; 
+        }
+    }
+        .mealCard-info{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            height: 46.427%;
+            width: 80%;
+        .title{
+            font-size: 4vw;
+            line-height: 5.3vw;
+            margin-top: 5vw;
+
+        }
+        .title, .info{
+            color: #faf5e5;
+        }
+        .info{
+            margin-top: 5vw;
+            font-size: 3.5vw;
+            line-height: 4.36vw;
+        }
+        .Rect-buttonMeal{
+            position: absolute;
+            bottom: 5vw;
+            width: 100%;
+            padding-bottom: 3.12vw;
+            padding-top: 3.12vw;
+            border-radius: 1.56vw;
+            border: transparent;
+            background-color: #FAF5E5;
+            font-family: 'satoshibold';
+            font-size: 4vw;
+            line-height: 4.36vw;
+            transition: .3s;
+            cursor: pointer;
+                &:hover{
+                    background-color: #FA007A;
+                    color: #FAF5E5;
+                }
+        }
+    }
+}
+}
+@media (min-width: 768px){
+    .mealCardList{
+        padding-bottom: 3vw;
+        .category-title{
+            text-align: center;
+            margin-bottom: 3vw;
+        }
+        .swiper{
+            margin-left: 0;
+        }
+        .swiper-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+    .mealCard{
+        background-color: #201b19;
+        width: 27.25vw;
+        min-width: 252px;
+        min-height: 363.75px;
+        height: 40.417vw;
+        user-select: none;
+        margin-right: 0.75vw;
+            .mealCard-info{
+            .title{
+                font-size: 1.667vw;
+                line-height: 2vw;
+                margin-top: 2vw;
+            }
+            .info{
+                margin-top: 2vw;
+                font-size: clamp(11px, 1vw, 50px);
+                line-height: clamp(14px, 1.2vw, 60px);
+            }
+            .Rect-buttonMeal{
+                bottom: 2.5vw;
+                padding-bottom: 1vw;
+                padding-top: 1vw;
+                border-radius: 0.5vw;
+                font-size: clamp(11px, 1.1vw, 55px);
+                line-height: 1.2vw;
+            }
+        }
+    }
+    }
+    .mealCardList-OurStory{
+        .swiper{
+            margin-left: 1.5vw;
+        }
+        .swiper-wrapper{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}

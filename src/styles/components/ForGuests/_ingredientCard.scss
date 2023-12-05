@@ -1,0 +1,63 @@
+.ingredient-card-list{
+    margin-top: -98vw;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+    .swiper-slide{
+        width: auto;
+    }
+    .ingredient-card{
+        width: 84.375vw;
+        height: 44.375vw;
+        text-align: center;
+        padding: 6.25vw 4.687vw;
+        border: transparent;
+        background-color: RGB(32, 27, 25) ;
+        h2{
+            font-size: 5vw;
+            line-height: 5.625vw;
+            letter-spacing: -0.5px;
+            color: #FAF5E5 ;
+        }
+        .info-card{
+            margin-top: 4vw;
+            font-size: 3.75vw;
+            line-height: 4.5vw;
+            color: #FAF5E5 ;
+        }
+    }
+}
+@media (min-width: 768px){
+    .ingredient-card-list{
+        margin-top: -54vw;
+        user-select: none;
+        .swiper-slide{
+            width: auto;
+        }
+        .ingredient-card{
+            width: 27.25vw;
+            min-width: 327px;
+            height: 11.25vw;
+            min-height: 135px;
+            text-align: start;
+            padding-top: clamp(18px, 1.5vw, 1.5vw);
+            padding-left: clamp(18px, 1.5vw, 1.5vw);
+            padding-right: clamp(18px, 1.5vw, 1.5vw);
+            padding-bottom: clamp(18px, 1.5vw, 1.5vw);
+            border: transparent;
+            background-color: RGB(32, 27, 25) ;
+            h2{
+                font-size: clamp(20px, 1.67vw, 1.67vw);
+                line-height: clamp(22px, 1.83vw, 1.83vw);
+                letter-spacing: -0.5px;
+                color: #FAF5E5 ;
+            }
+            .info-card{
+                margin-top: clamp(12px, 1vw, 1vw);
+                font-size: clamp(12px, 1.08vw, 1.08vw);
+                line-height: clamp(16px, 1.33vw, 1.33vw);
+                color: #FAF5E5 ;
+            }
+        }
+    }
+}

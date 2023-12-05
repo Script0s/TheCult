@@ -1,0 +1,77 @@
+.intro-container{
+    padding-top:  25vw;
+    padding-bottom: 9.375vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .calligraphie-left{
+        width: 31.25vw;
+        animation: translateCalliLeft linear forwards 2s;
+    }
+    .heroe-intro{
+        width: 62.5vw;
+    }
+    .calligraphie-right{
+        width: 31.25vw;
+        animation: translateCalliRight linear forwards 2s;
+    }
+    @keyframes translateCalliLeft {
+        0% {
+            transform: translateX(-100%);
+            animation-timing-function: ease-out;
+        }
+        100% {
+            transform: translateX(50%);
+        }
+    }
+    @keyframes translateCalliRight {
+        0% {
+            transform: translateX(100%);
+            animation-timing-function: ease-out;
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (min-width: 768px){
+.intro-container{
+    padding-top: 12vw;
+    padding-bottom: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .calligraphie-left{
+        width: 22.08vw;
+        animation: translateCalliLeft linear forwards 2s;
+    }
+    .heroe-intro{
+        width: 30.75vw;
+    }
+    .calligraphie-right{
+        width: 21.58vw;
+        animation: translateCalliRight linear forwards 2s;
+    }
+    }
+    @keyframes translateCalliLeft {
+        0% {
+            transform: translateX(-50vw);
+            animation-timing-function: ease-out;
+        }
+        100% {
+            transform: translateX(2vw);
+        }
+    }
+    @keyframes translateCalliRight {
+        0% {
+            transform: translateX(50vw);
+            animation-timing-function: ease-out;
+        }
+        100% {
+            transform: translateX(-2vw);
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.View-menu{
+  overflow: hidden;
+  text-align: center;
+    .desktop-bigImg{
+      display: none;
+    }
+    .ViewMenu-info-container{
+      .ViewMenu-info{
+        h1{
+          margin: 20px 0;
+        }
+        .viewMenu-text1{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .viewMenu-text2{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+      }
+      .mobileViewMenu-img{
+        margin: 20px 30px;
+        .category-img{
+            position: relative;
+            display: flex;
+            margin-bottom: 10px;
+            cursor: pointer;
+            .category-img1{
+              width: 100%;
+            }
+            .category-img2{
+                position: absolute;
+                left: 50%;
+                margin-top: 5%;
+                width: 40%;
+            }
+            .category-img2a{
+                animation: rotateA 5s infinite linear;
+            }
+            .category-img2b{
+                animation: rotateB 5s infinite linear;
+            }
+            .ramen2{
+                width: 50%;
+                margin-top: -2.5%;
+                left: 47%;
+            }
+        }
+      }
+    }
+}
+@keyframes rotateA {
+    10% {
+      transform: rotate(0);
+    }
+    50% {
+        transform: rotate(15deg);
+      }
+    60% {
+        transform: rotate(15deg);
+      }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+@keyframes rotateB {
+    10% {
+      transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-15deg);
+      }
+    60% {
+        transform: rotate(-15deg);
+      }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+@media (min-width: 768px){
+  .View-menu{
+    position: relative;
+    text-align: start;
+    margin-top: 5.5vw;
+      .desktop-bigImg{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        img{
+          width: clamp( 176px, 19.5vw, 671px );
+          margin-left: 1vw;
+          margin-right: 1vw;
+          filter: brightness(0);
+          transition: .6s;
+          &:hover{
+            filter: brightness(1);
+          }
+        }
+      }
+      .ViewMenu-info-container{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: -50%;
+        padding-left: 1vw;
+
+        .ViewMenu-info{
+          h1{
+            margin: 0;
+          }
+          .viewMenu-text1{
+            margin-top: 2vw;
+            margin-left: 0;
+            margin-right: 0;
+            width: clamp(342px,28vw,981px);
+          }
+          .viewMenu-text2{
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 2vw;
+            width: clamp(342px,28vw,981px);
+          }
+        }
+        .mobileViewMenu-img{
+          display: none;
+        }
+      }
+  }
+}

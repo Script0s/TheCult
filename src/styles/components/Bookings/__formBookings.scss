@@ -1,0 +1,207 @@
+.formBookings-container{
+    margin-top: -67vw;
+    position: relative;
+    .butler{
+        position: relative;
+        margin-top: -55vw;
+        margin-bottom: -10vw;
+        margin-left: -21.8vw;
+        width: 145vw;
+        animation: rotateButler 12s infinite linear;
+        z-index: 1;
+    }
+    .ice-cup-pink{
+        position: absolute;
+        bottom: 101vw;
+        left: 10vw;
+        width: 15vw;
+        transform: rotate(332deg);
+        animation: rotateIceCupPink 7s infinite linear;
+    }
+@keyframes rotateIceCupPink {
+0% {
+    transform: translateY(0px)rotate(332deg);
+    animation-timing-function: ease-in-out;
+}
+
+50% {
+    transform: translateY(40px)rotate(352deg);
+    animation-timing-function: ease-in-out;
+}
+
+100% {
+    transform: translateY(0px)rotate(332deg);
+}
+}
+
+@keyframes rotateButler {
+0% {
+    transform: translateY(0px)rotate(0deg);
+    animation-timing-function: ease-in-out;
+}
+25% {
+    transform: translateY(5px)rotate(8deg);
+    animation-timing-function: ease-in-out;
+}
+
+50% {
+    transform: translateY(-5px)rotate(-8deg);
+    animation-timing-function: ease-in-out;
+}
+
+75% {
+    transform: translateY(5px)rotate(8deg);
+    animation-timing-function: ease-in-out;
+}
+
+100% {
+    transform: translateY(0px)rotate(0deg);
+}
+}
+    .form-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        .textarea-box {
+            position: relative;
+            width: 100%;
+            margin-bottom: 50px;
+            label {
+              position: absolute;
+              left: 15px;
+              top: 15px;
+              user-select: none;
+              pointer-events: none;
+              span {
+                display: inline-flex;
+                flex-direction: row;
+                letter-spacing: 0px;
+                transition: 0.35s cubic-bezier(0.5,1,0.5,1.5);
+                font-family: 'satoshibold';
+                font-size: 18px;
+              }
+            }
+            &.focused label span {
+              color: #fa007a;
+              transform: translateY(-45px) translateX(-15px);
+            }
+          }
+        textarea{
+            background-color: #FAF5E5;
+            border:3px solid #fa00793a;
+            width: 100%;
+            font-size: 15px;
+            transition: .35s cubic-bezier(0.5,1,0.5,1.5);
+        }
+        textarea:focus{
+            outline: none;
+            border:3px solid #fa0079;
+            transition: .35s cubic-bezier(0.5,1,0.5,1.5);
+        }
+        .input-container{
+            align-self: center;
+            width: 70%;
+            .input-box{
+                input {
+                    background-color: #FAF5E5;
+                }
+                input[type=date]:required:invalid::-webkit-datetime-edit {
+                    color: transparent;
+                }
+                input[type=date]:focus::-webkit-datetime-edit {
+                    color: black !important;
+                }
+                input[type=time]:required:invalid::-webkit-datetime-edit {
+                    color: transparent;
+                }
+                input[type=time]:focus::-webkit-datetime-edit {
+                    color: black !important;
+                }
+                label {
+                }
+                &.focused label span {
+                    background-color: #FAF5E5;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .formBookings-container{
+        margin-top: 4vw;
+        margin-bottom: 27vw;
+        .butler{
+            position: absolute;
+            top: -10vw;
+            bottom: auto;
+            right: -6.5vw;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            width: 67.5vw;
+            animation: rotateButler 12s infinite linear;
+        }
+        .ice-cup-pink{
+            position: absolute;
+            top: 45vw;
+            left: 12vw;
+            width: 10.25vw;
+            animation: rotateIceCupPink 7s infinite linear;
+        }
+        .form-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            .textarea-box {
+                position: relative;
+                width: 100%;
+                margin-bottom: clamp(50px, 4.17vw, 4.17vw);
+                label {
+                  position: absolute;
+                  left: 1.25vw;
+                  top: 1.25vw;
+                  user-select: none;
+                  pointer-events: none;
+                  span {
+                    display: inline-flex;
+                    flex-direction: row;
+                    letter-spacing: 0px;
+                    transition: 0.35s cubic-bezier(0.5,1,0.5,1.5);
+                    font-family: 'satoshibold';
+                    font-size: clamp(18px, 1.5vw, 1.5vw);
+                  }
+                }
+                &.focused label span {
+                  color: #fa007a;
+                  transform: translateY(-3.75vw) translateX(-1.25vw);
+                }
+              }
+            textarea{
+                background-color: #FAF5E5;
+                border:2px solid #fa00793a;
+                width: 100%;
+                font-size: clamp(15px, 1.25vw, 1.25vw);
+                transition: .35s cubic-bezier(0.5,1,0.5,1.5);
+            }
+            textarea:focus{
+                outline: none;
+                border:2px solid #fa0079;
+                transition: .35s cubic-bezier(0.5,1,0.5,1.5);
+            }
+            .input-container{
+                align-self: center;
+                width: 32.83vw;
+                .input-box{
+                    label {
+                    }
+                }
+            }
+        }
+    }
+}

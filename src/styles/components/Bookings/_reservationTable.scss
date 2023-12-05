@@ -1,0 +1,131 @@
+.reservationTable-container{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vw;
+    .info-1{
+        width: 73.125vw;
+        margin-top: 4vw;
+    }
+    .info-2{
+        width: 58vw;
+    }
+    .hiyori{
+        position: relative;
+        top: 7vw;
+        left: -20vw;
+        width: 76.875vw;
+        transform: rotate(2deg);
+        animation: rotateHiyori 12s infinite linear;
+    }
+    .drink-pink{
+        position: absolute;
+        top: 70vw;
+        right: 7vw;
+        width: 19.062vw;
+        transform: rotate(346deg);
+        animation: rotateDrinkPink 7s infinite linear;
+    }
+@keyframes rotateHiyori {
+        0% {
+            transform: translateY(0)rotate(2deg);
+            animation-timing-function: ease-in-out;
+        }
+        25% {
+            transform: translateY(-17.187vw)rotate(7deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: translateY(3.125vw)rotate(-3deg);
+            animation-timing-function: ease-in-out;
+        }
+        75% {
+            transform: translateY(-17.187vw)rotate(7deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: translateY(0)rotate(2deg);
+        }
+    }
+    @keyframes rotateDrinkPink {
+        0% {
+            transform: translateY(0)rotate(346deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: translateY(18.75vw)rotate(326deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: translateY(0)rotate(346deg);
+        }
+    }
+}
+@media (min-width: 768px){
+    .reservationTable-container{
+        margin-top: 2vw;
+        margin-bottom: 0vw;
+        .info-1{
+            width: 24.83vw;
+            min-width: 270px;
+            margin-top: 2vw;
+        }
+        .info-2{
+            width: 22vw;
+            min-width: 264px;
+        }
+        .hiyori{
+            position: absolute;
+            top: 0vw;
+            left: -7vw;
+            width: 40.33vw;
+            transform: rotate(2deg);
+            animation: rotateHiyori 12s infinite linear;
+        }
+        .drink-pink{
+            position: absolute;
+            top: 5vw;
+            right: 11.5vw;
+            width: 15.25vw;
+            transform: rotate(0deg);
+            animation: rotateDrinkPink 7s infinite linear;
+        }
+    @keyframes rotateHiyori {
+            0% {
+                transform: translateY(0)rotate(2deg);
+                animation-timing-function: ease-in-out;
+            }
+            25% {
+                transform: translateY(-3.33vw)rotate(7deg);
+                animation-timing-function: ease-in-out;
+            }
+            50% {
+                transform: translateY(3.33vw)rotate(-3deg);
+                animation-timing-function: ease-in-out;
+            }
+            75% {
+                transform: translateY(-3.33vw)rotate(7deg);
+                animation-timing-function: ease-in-out;
+            }
+            100% {
+                transform: translateY(0)rotate(2deg);
+            }
+        }
+        @keyframes rotateDrinkPink {
+            0% {
+                transform: translateY(0)rotate(0deg);
+                animation-timing-function: ease-in-out;
+            }
+            50% {
+                transform: translateY(5vw)rotate(-20deg);
+                animation-timing-function: ease-in-out;
+            }
+            100% {
+                transform: translateY(0)rotate(0deg);
+            }
+        }
+    }
+}

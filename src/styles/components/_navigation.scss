@@ -1,0 +1,145 @@
+.navigation {
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+    .navLink {
+        font-size: 40px;
+        margin-top: 20px;
+        transition: color 0.6s;
+        transform: scale(0);
+        cursor: pointer;
+        pointer-events: auto;
+        &:hover {
+        color: #fa007a;
+
+      }
+      &.active {
+        transform: scale(1);
+      }
+    }
+    .nav-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+      .menu {
+        transition: color 0.6s, transform 0.6s 0s ;
+      }
+      .booking {
+        transition: color 0.6s, transform 0.6s 0.15s ;
+      }
+      .forGuests {
+        transition: color 0.6s, transform 0.6s 0.3s ;
+      }
+    }
+    .nav-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      .theCult {
+        width:  25vw;
+        cursor: pointer;
+        pointer-events: auto;
+      }
+      .menu-button {
+        position: absolute;
+        right: 7.5%;
+        .menuToggle {
+          cursor: pointer;
+          display: flex;
+          font-size: 2em;
+          pointer-events: auto;
+        &:hover{
+            color: #fa007a;
+            transition: color 0.6s;
+        }
+        }
+        .overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: -4;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: clip-path .75s .6s;
+          clip-path: circle(0% at var(--x) var(--y));
+        }
+        .overlay.active {
+          transition: clip-path .7s 0s;
+          clip-path: circle(150% at var(--x) var(--y));
+        }
+      }
+    }
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+      .ourStory {
+        transition: color 0.6s, transform 0.6s 0.45s ;
+      }
+      .contactUs {
+        transition: color 0.6s, transform 0.6s 0.6s ;
+      }
+    }
+  }
+  @media (min-width: 768px){
+.navigation{
+    margin-top: 3.4vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .navLink{
+      margin-top: 0px;
+      transform:scale(1);
+      font-size: clamp(11px, 1vw, 34px);
+      line-height: 1.2vw;
+    }
+    .nav-left {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      width: 100%;
+      padding-right: 7.5vw;
+      a{
+        padding-left: 2vw;
+      }
+    }
+    .nav-center{
+      display: block;
+      order: 2;
+      .theCult{
+        width: 9.084vw;
+      }
+     .menu-button{
+      display: none;
+     }
+    }
+    .nav-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      order: 3;
+      width: 100%;
+      margin-left: 3vw;
+      a{
+        padding-left: 2vw;
+      }
+    }
+
+}
+  }

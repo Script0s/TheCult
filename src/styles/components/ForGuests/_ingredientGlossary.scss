@@ -1,0 +1,106 @@
+.ingredientGlossary-container{
+    overflow: hidden;
+    margin-top: 6vw;
+    text-align: center;
+    .infos-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title-ingredientGlossary{
+            margin-bottom: 6vw;
+            width: 38.125vw;
+        }
+        .info1{
+            width: 82.5vw;
+        }
+        .info2{
+            width: 77.5vw;
+        }
+    }
+    .glossaryImg-container{
+        position: relative;
+        text-align: start;
+        margin-top: -7vw;
+            .deidara{
+                position: absolute;
+                top: 15vw;
+                left: -5vw;
+                width: 57.187vw;
+                z-index: -1;
+            }
+            .itachi{
+                position: relative;
+                top: 0;
+                left: 50vw;
+                width: 62.5vw;
+                z-index: -1;
+            }
+        .mountainMobile{
+            margin-top: -40vw;
+            width: 100%;
+        }
+        .DesktopMountain{
+            display: none;
+        }
+    }
+}
+@media (min-width: 768px){
+    .ingredientGlossary-container{
+        margin-top: -6vw;
+        text-align: center;
+        position: relative;
+        .infos-container{
+            position: absolute;
+            top: 18vw;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title-ingredientGlossary{
+                margin-bottom: 2vw;
+                width: 38.125vw;
+            }
+            .info1{
+                width: 35vw;
+            }
+            .info2{
+                width: 35vw;
+            }
+        }
+        .glossaryImg-container{
+            position: relative;
+            text-align: start;
+            margin-top: 0vw;
+            z-index: 1;
+                .deidara{
+                    position: absolute;
+                    top: 10.7vw;
+                    left: -2vw;
+                    width: 36.42vw;
+                    z-index: -2;
+                }
+                .itachi{
+                    position: relative;
+                    top: 0;
+                    left: 67.5vw;
+                    width: 40.85vw;
+                    z-index: -2;
+                }
+            .mountainMobile{
+                display: none;
+            }
+            .DesktopMountain{
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: -41vw;
+                display: block;
+                width: 118.83vw;
+                z-index: -1;
+            }
+        }
+    }
+}

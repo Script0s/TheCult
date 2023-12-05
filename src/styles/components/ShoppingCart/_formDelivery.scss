@@ -1,0 +1,61 @@
+.FormDelivery{
+  .error-message{
+    font-size: 15px;
+    line-height: 12.5px;
+    color: red;
+    padding-bottom: 20px;
+}
+  .order-summary{
+    p{
+      font-family: 'satoshibold';
+      font-size: 16px;
+      line-height: 23.2px;
+    }
+  }
+    .radio-container{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 16px;
+            line-height: 23.2px;
+            padding-bottom: 20px;
+        }
+        .custom-radio-button{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 20.3px;
+            input[type="radio"] {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                height: 20px;
+                width: 20px;
+                border: 2px solid #fa007a;
+                border-radius: 50%;
+                position: relative;
+                outline: none;
+                margin-right: 10px;
+                cursor: pointer;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: transparent;
+                  transform: translate(-50%, -50%);
+                  transition: background-color 0.2s;
+                }
+                &:checked {
+                  &:after {
+                    background-color: #000;
+                  }
+                }
+              }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.swiperBlackWhite-container{
+    position: relative;
+    background-color: #FAF5E5;
+    text-align: center;
+    .swiperBlackWhite{
+        margin-bottom: -2px;
+        .item{
+           .imageBlackWhite{
+            width: 100%;
+            user-select: none;
+           }
+        }
+    }
+}

@@ -1,0 +1,239 @@
+.vacationing-container{
+    text-align: center;
+    .video-container{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        .homeVideo {
+            width: 142.2%;
+        }
+    }
+    .vacationing-infos{
+        padding-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FAF5E5;
+        .buttonBookin{
+            z-index: 1;
+        }
+    }
+    .mobileHeroes-container{
+        position: relative;
+        background-color: #FAF5E5;
+        .mobileLuffyNaruto{
+            margin-top: -60px;
+            width: 100%;
+        }
+    }
+    .desktopHeroesBlades-container{
+        display: none;
+    }
+        .shuriken-container{
+            position: relative;
+            background-color: #FAF5E5;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 10px;
+            .shuriken-img-container1{
+                margin-left: 20px;
+                .shuriken1{
+                    width: 70px;
+                }
+            }
+            .shuriken-img-container2{
+                .shuriken2{
+                    width: 130px;
+                }
+            }
+            .shuriken-img-container3{
+                margin-right: 20px;
+                .shuriken3{
+                    width: 60px;
+                }
+            }
+            .shuriken-img-container4{
+                display: none;
+                .shuriken4{
+                }
+            }
+        }
+        h1{
+            position: relative;
+            background-color: #FAF5E5;
+            padding: 20px 0;
+        }
+}
+@media (min-width: 768px){
+    .vacationing-container{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        .vacationing-infos{
+            display: block;
+            position: absolute;
+            top: 86vw;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 0;
+            z-index: 2;
+            h2{
+                position: relative;
+                margin-bottom: 1.5vw;
+                z-index: 1;
+            }
+            p{
+                position: relative;
+                z-index: 1;
+            }
+            .buttonBookin{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 1.5vw;
+                z-index: 2;
+            }
+        }
+        .mobileHeroes-container{
+            display: none;
+            .mobileLuffyNaruto{
+            }
+        }
+        .desktopHeroesBlades-container{
+            display: block;
+            position: relative;
+            background-color: #FAF5E5;
+            .heroesImg-container{
+                position: absolute;
+                z-index: 1;
+                overflow: hidden;
+                .DesktopAyanami{
+                    position: relative;
+                    top: 10.25vw;
+                    left: -5vw;
+                    width: 28.75vw;
+                }
+                .DesktopLuffy{
+                    position: relative;
+                    top: 19.4vw;
+                    left: -21vw;
+                    width: 29.834vw;
+                }
+                .DesktopNaruto{
+                    position: relative;
+                    top: 25vw;
+                    left: -29.5vw;
+                    width: 31.834vw;
+                }
+                .DesktopSailorMoon{
+                    position: relative;
+                    top: -26.9vw;
+                    left: 40.5vw;
+                    width: 34.25vw;
+                }
+                .DesktopRengoku{
+                    position: relative;
+                    top: -34.5vw;
+                    left: 18.3vw;
+                    width: 33.334vw;
+                }
+            }
+            .blades{
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                .DesktopLeftBlade{
+                    width: 97.834vw;
+                    transform: translateX(-27vw);
+                    animation: bladeLeftAnimate 2s infinite linear;
+                }
+                .DesktopRightBlade{
+                    position: absolute;
+                    top: 0;
+                    right: -26.6vw;
+                    width: 97.834vw;
+                    animation: bladeRightAnimate 2s infinite linear;
+                }
+            }
+        }
+            .shuriken-container{
+                position: relative;
+                background-color: #FAF5E5;
+                display: block;
+                padding-bottom: 0;
+                .shuriken-img-container1{
+                    margin-left: 0;
+                    position: absolute;
+                    top: -38.8vw;
+                    left: 4vw;
+                    .shuriken1{
+                        width: 10.5vw;
+                    }
+                }
+                .shuriken-img-container2{
+                    position: absolute;
+                    top: -23vw;
+                    left: 10vw;
+                    .shuriken2{
+                        width: 19vw;
+                    }
+                }
+                .shuriken-img-container3{
+                    margin-right: 0;
+                    position: absolute;
+                    top: -22.8vw;
+                    right: 10vw;
+                    .shuriken3{
+                        width: 15.167vw;
+                    }
+                }
+                .shuriken-img-container4{
+                    display: block;
+                    position: absolute;
+                    top: -38.5vw;
+                    right: 4vw;
+                    .shuriken4{
+                        width: 11.25vw;
+                    }
+                }
+            }
+                h1{
+                    position: absolute;
+                    bottom: 5vw;
+                    left: 50%;
+                    padding: 0 0;
+                    width: 35vw;
+                    transform: translateX(-50%);
+                }
+    }
+    @keyframes bladeRightAnimate {
+        0% {
+            transform: translateX(0)translateY(0);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateX(2.5vw)translateY(-2vw);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateX(0)translateY(0);
+        }
+    }
+    @keyframes bladeLeftAnimate {
+        0% {
+            transform: translateX(-27vw)translateY(0);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateX(-29.5vw)translateY(-2vw);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateX(-27vw)translateY(0);
+        }
+    }
+}

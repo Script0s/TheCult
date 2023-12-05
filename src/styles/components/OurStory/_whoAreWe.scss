@@ -1,0 +1,110 @@
+.whoAreWe-container{
+    text-align: center;
+    .title-infos-container{
+        .titles-container{
+            margin-bottom: 20px;
+        h1{
+            margin-bottom: 20px;
+        }
+        }
+    .infos-container{
+        .info1{
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        .info2{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .info3{
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        .info4{
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-bottom: 20px;
+        }
+        .signature{
+            font-family: 'satoshibold';
+            margin-bottom: 20px;
+        }
+
+    }
+    }
+    .mobileWhoAreWe{
+        width: 100%;
+    }
+    .desktop-img-container{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .whoAreWe-container{
+        text-align: start;
+        .title-infos-container{
+            display: flex;
+            justify-content: center;
+            .titles-container{
+                transform: translateX(-5.5vw);
+                margin-bottom: 0;
+            h1{
+                margin-bottom: 2vw;
+            }
+            h2{
+            }
+            }
+        .infos-container{
+            transform: translateX(3vw);
+            width: clamp(312px, 26vw, 895px);
+            .info1{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .info2{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .info3{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .info4{
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+            .signature{
+                font-family: 'satoshibold';
+                margin-bottom: 0;
+            }
+        }
+        }
+        .mobileWhoAreWe{
+            display: none;
+        }
+        .desktop-img-container{
+            display: flex;
+            position: relative;
+            margin-top: -3.7vw;
+            overflow: hidden;
+            .DesktopLeftNinjas{
+                width: 50vw;
+                transform: translateX(-30vw);
+                transition: transform 0.5s ease-out;
+            }
+            .DesktopRightNinjas{
+                width: 50vw;
+                margin-top: 5.7vw;
+                transform: translateX(30vw);
+                transition: transform 0.5s ease-out;
+            }
+            .DesktopPinkImg{
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+                width: 100%;
+            }
+        }
+    }
+}

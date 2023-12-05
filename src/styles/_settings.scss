@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    width: 0;
+}
+@font-face {
+    font-family: 'dharma_gothic_cbold';
+    src: url('../Fonts/DharmaGothic/dharmagothicc-bold-webfont.woff2') format('woff2'),
+         url('../Fonts/DharmaGothic/dharmagothicc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dharma_gothic_cexbold';
+    src: url('../Fonts/DharmaGothic/dharmagothicc-exbold-webfont.woff2') format('woff2'),
+         url('../Fonts/DharmaGothic/dharmagothicc-exbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dharma_gothic_cheavy';
+    src: url('../Fonts/DharmaGothic/dharmagothicc-heavy-webfont.woff2') format('woff2'),
+         url('../Fonts/DharmaGothic/dharmagothicc-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'satoshiregular';
+    src: url('../Fonts/Satoshi/satoshi-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/Satoshi/satoshi-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'satoshimedium';
+    src: url('../Fonts/Satoshi/satoshi-medium-webfont.woff2') format('woff2'),
+         url('../Fonts/Satoshi/satoshi-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'satoshibold';
+    src: url('../Fonts/Satoshi/satoshi-bold-webfont.woff2') format('woff2'),
+         url('../Fonts/Satoshi/satoshi-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    font-family: 'satoshimedium';
+    font-size: 3.438vw;
+    line-height: 5vw;
+    color: #201b19;
+    background-color: #FAF5E5;
+    a{
+        font-family: 'satoshibold';
+        text-decoration: none;
+        color: inherit;
+    }
+    p{
+        padding-bottom: clamp(10px, 1vw, 50px);
+    }
+    h1{
+    font-size: 14vw;
+    line-height: 12vw;
+    letter-spacing: 2px;
+    font-family: 'dharma_gothic_cexbold';
+    }
+    h2{
+        font-family: 'satoshibold';
+        font-size: 3.7vw;
+        line-height: 5vw;
+    }
+    .Rect-button{
+        padding-left: clamp(20px, 1.9vw, 100px );
+        padding-right: clamp(20px, 1.9vw, 100px );
+        padding-bottom: clamp(10px, 1vw, 50px);
+        padding-top: clamp(10px, 1vw, 50px);
+        border-radius: clamp(5px, .5vw, 25px);
+        border: transparent;
+        background-color: RGB(32, 27, 25);
+        color: #FAF5E5 ;
+        font-family: 'satoshibold';
+        font-size: 3.438vw;
+        line-height: 5vw;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            background-color: #FA007A;
+            color: RGB(32, 27, 25);
+        }
+}
+}
+@media (min-width: 768px){
+    body{
+        font-size: clamp(12px, 1vw, 1vw);
+        line-height: clamp(17px, 1.42vw, 1.42vw);
+        h1{
+            font-size: 8.4vw;
+            line-height: 6.67vw;
+        }
+        h2{
+            font-size: 2vw;
+            line-height: 2.42vw;
+        }
+        .Rect-button{
+        font-size: clamp(12px, 1vw, 1vw);
+        line-height: clamp(17px, 1.42vw, 1.42vw);
+        }
+    }
+    }

@@ -1,0 +1,296 @@
+.none-container{
+    overflow: hidden;
+    .NonProfit-project{
+        padding-top: 30vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .calli{
+            width: 62.812vw;
+            margin-bottom: 10vw;
+        }
+        h1{
+            width: 85.625vw;
+        }
+        .button-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-top: 4vw;
+            .leftButton-container{
+                h2{
+                    width: 29.062vw;
+                    margin-bottom: 2vw;
+                }
+            }
+            .rightButton-container{
+                h2{
+                    width: 33vw;
+                    margin-bottom: 2vw;
+                }
+            }
+        }
+        .img-none-container{
+            margin-top: 2vw;
+            width: 100%;
+            display: flex;
+            position: relative;
+
+        .chainsawman{
+            position: relative;
+            left: 50%;
+            width: 177vw;
+            transform: translateX(-50%);
+        }
+        .MobileTopLeft{
+            position: absolute;
+            top: 5.25vw;
+            left: 6vw;
+            width: 13.437vw;
+            transform: rotate(3deg);
+            animation: MobileTopLeft 4s infinite linear;
+        }
+        .MobileBottomLeft{
+            position: absolute;
+            top: 24vw;
+            left: 17.5vw;
+            width: 21.25vw;
+            transform: rotate(355deg);
+            z-index: -1;
+            animation: MobileBottomLeft 4s infinite linear;
+        }
+        .MobileTopMid{
+            position: absolute;
+            top: -10vw;
+            left: 36.5vw;
+            width: 24.375vw;
+            transform: rotate(1deg);
+            z-index: -1;
+            animation: MobileTopMid 4s infinite linear;
+        }
+        .MobileTopRight{
+            position: absolute;
+            top: 13.3vw;
+            right: 5vw;
+            width: 16.562vw;
+            transform: rotate(350deg);
+            animation: MobileTopRight 4s infinite linear;
+        }
+        .MobileBottomRight{
+            position: absolute;
+            top: 39vw;
+            right: 16vw;
+            width: 21.25vw;
+            transform: rotate(5deg);
+            z-index: -1;
+            animation: MobileBottomRight 4s infinite linear;
+        }
+        .DesktopBottomRight{
+            display: none;
+        }
+        .DesktopBottomLeft{
+            display: none;
+        }
+    }
+    }
+    @keyframes MobileTopLeft {
+        0% {
+            transform: rotate(3deg)scale(1,1);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(-78deg)scale(0.8,0.8);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(3deg)scale(1,1);
+        }
+    }
+    @keyframes MobileBottomLeft {
+        0% {
+            transform: rotate(355deg)scale(1,1);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(335deg)scale(1.15,1.15);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(355deg)scale(1,1);
+        }
+    }
+    @keyframes MobileTopMid {
+        0% {
+            transform: rotate(1deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(-14deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(1deg);
+        }
+    }
+    @keyframes MobileTopRight {
+        0% {
+            transform: rotate(350deg)scale(1,1);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(425deg)scale(0.8,0.8);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(350deg)scale(1,1);
+        }
+    }
+    @keyframes MobileBottomRight {
+        0% {
+            transform: rotate(5deg)scale(1,1);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(25deg)scale(1.15,1.15);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(5deg)scale(1,1);
+        }
+    }
+}
+@media (min-width: 768px){
+    .none-container{
+        .NonProfit-project{
+            padding-top: 14vw;
+            .calli{
+                width: 34vw;
+                margin-bottom: 3.25vw;
+            }
+            h1{
+                width: 57.75vw;
+            }
+            .button-container{
+                margin-top: 4vw;
+                .leftButton-container{
+                    h2{
+                        width: 29.062vw;
+                        margin-bottom: 1vw;
+                    }
+                }
+                .rightButton-container{
+                    h2{
+                        width: 33vw;
+                        margin-bottom: 1vw;
+                    }
+                }
+                button{
+                    font-size: 1.5vw;
+                    line-height: 1.8vw;
+                    padding: 1.25vw 4vw;
+                }
+            }
+            .img-none-container{
+                margin-top: -10.7vw;
+                width: 100%;
+                display: flex;
+                position: relative;
+            .chainsawman{
+                position: relative;
+                left: auto;
+                width: 100%;
+                transform: translateX(0);
+            }
+            .MobileTopLeft{
+                position: absolute;
+                top: 15.5vw;
+                left: 15vw;
+                width: 7.42vw;
+                transform: rotate(3deg);
+                animation: MobileTopLeft 4s infinite linear;
+            }
+            .MobileBottomLeft{
+                position: absolute;
+                top: 14.5vw;
+                left: 32.5vw;
+                width: 11.83vw;
+                transform: rotate(355deg);
+                z-index: -1;
+                animation: MobileBottomLeft 4s infinite linear;
+            }
+            .MobileTopMid{
+                position: absolute;
+                top: -5vw;
+                left: 42.2vw;
+                width: 16.67vw;
+                transform: rotate(1deg);
+                z-index: -1;
+                animation: MobileTopMid 4s infinite linear;
+            }
+            .MobileTopRight{
+                position: absolute;
+                top: 14vw;
+                right: 16.5vw;
+                width: 9.33vw;
+                transform: rotate(350deg);
+                animation: MobileTopRight 4s infinite linear;
+            }
+            .MobileBottomRight{
+                position: absolute;
+                top: 22.5vw;
+                right: 30vw;
+                width: 11.75vw;
+                transform: rotate(5deg);
+                z-index: -1;
+                animation: MobileBottomRight 4s infinite linear;
+            }
+            .DesktopBottomRight{
+                display: block;
+                position: absolute;
+                width: 5.58vw;
+                top: 24.5vw;
+                right: 7vw;
+                transform: rotate(352deg);
+                animation: DesktopBottomRight 4s infinite linear;
+            }
+            .DesktopBottomLeft{
+                display: block;
+                position: absolute;
+                width: 6.67vw;
+                top: 25.2vw;
+                left: 4vw;
+                animation: DesktopBottomLeft 4s infinite linear;
+            }
+        }
+        }
+        @keyframes DesktopBottomRight {
+            0% {
+                transform: rotate(352deg)scale(1,1);
+                animation-timing-function: ease-in-out;
+            }
+            50% {
+                transform: rotate(277deg)scale(1.2,1.2);
+                animation-timing-function: ease-in-out;
+            }
+            100% {
+                transform: rotate(352deg)scale(1,1);
+            }
+        }
+        @keyframes DesktopBottomLeft {
+            0% {
+                transform: rotate(0deg)scale(1,1);
+                animation-timing-function: ease-in-out;
+            }
+            50% {
+                transform: rotate(75deg)scale(1.2,1.2);
+                animation-timing-function: ease-in-out;
+            }
+            100% {
+                transform: rotate(0deg)scale(1,1);
+            }
+        }
+    }
+}

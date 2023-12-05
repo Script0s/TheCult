@@ -1,0 +1,195 @@
+.chefTakeshi-container{
+    text-align: center;
+    margin-top: 30px;
+    .desktopChefTakeshiImg-container{
+        display: none;
+    }
+    .chefTakeshi-info{
+        .text-description1{
+            margin-top: 25px;
+            margin-left: 14%;
+            margin-right: 14%;
+        }
+        .text-description2{
+            margin-left: 17%;
+            margin-right: 17%;
+        }
+    }
+    .mobileChefTakeshiImg-container{
+        .chefTakeshi-img{
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+    .text-animate{
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        h1{
+            margin: 1.562vw;
+            animation: bannerAnimate 0s linear infinite;
+        }
+    }
+}
+@keyframes bannerAnimate {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-16vw);
+    }
+    100% {
+        transform: translateX(-32vw);
+    }
+}
+@media (min-width: 768px){
+    .chefTakeshi-container{
+        position: relative;
+        text-align: start;
+        margin-top: -20vw;
+        overflow: hidden;
+        .desktopChefTakeshiImg-container{
+            display: block;
+            position: relative;
+            .desktopPinkImg{
+                width: 100%;
+            }
+            .desktopChefTakeshi{
+                position: absolute;
+                bottom: 0;
+                left: 50vw;
+                width: 51.417vw;
+            }
+            .desktopWhitePepper{
+                position: absolute;
+                top: 36vw;
+                right: -1vw;
+                width: 16.834vw;
+                transform: rotate(50deg);
+                animation: whitePepperAnimate 4s linear infinite;
+            }
+            .desktopBlackPepper{
+                position: absolute;
+                top: 27vw;
+                right: 4vw;
+                width: 16.834vw;
+                transform: rotate(321deg);
+                animation: blackPepperAnimate 4s linear infinite;
+            }
+            .desktopOnionAsterisque{
+                position: absolute;
+                top: 25vw;
+                right: 7vw;
+                width: 8.417vw;
+                transform: rotate(350deg);
+                animation: onionAnimate 4s linear infinite;
+            }
+            .desktopShrimp{
+                margin-top: 4.5vw;
+                margin-left: 81vw;
+                margin-bottom: 1.7vw;
+                width: 21.25vw;
+                transform: rotate(335deg);
+                animation: shrimpAnimate 4s linear infinite;
+            }
+        }
+        .chefTakeshi-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            position: absolute;
+            top: 25vw;
+            left: 19vw;
+            height: 35vw;
+            p{
+                padding-bottom: 0;
+            }
+            .text-description1{
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                width: clamp(270px, 26.5vw, 1000px);
+            }
+            .text-description2{
+                margin-left: 0;
+                margin-right: 0;
+                width: clamp(222px, 18.5vw, 800px);
+            }
+        }
+        .mobileChefTakeshiImg-container{
+            display: none;
+        }
+        .text-animate{
+            width: 100%;
+            display: flex;
+            h1{
+                margin: 1vw;
+                animation: bannerAnimate 3s linear infinite;
+            }
+        }
+    }
+    @keyframes shrimpAnimate {
+        0% {
+            transform: translateY(0vw)rotate(335deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: translateY(-1vw)rotate(325deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: translateY(0vw)rotate(335deg);
+        }
+    }
+    @keyframes onionAnimate {
+        0% {
+            transform: translateY(0vw)rotate(350deg);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateY(1vw)rotate(365deg);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateY(0vw)rotate(350deg);
+        }
+    }
+    @keyframes whitePepperAnimate {
+        0% {
+            transform: rotate(50deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(30deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(50deg);
+        }
+    }
+    @keyframes blackPepperAnimate {
+        0% {
+            transform: rotate(321deg);
+            animation-timing-function: ease-in-out;
+        }
+        50% {
+            transform: rotate(341deg);
+            animation-timing-function: ease-in-out;
+        }
+        100% {
+            transform: rotate(321deg);
+        }
+    }
+    @keyframes bannerAnimate {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-17.25vw);
+        }
+        100% {
+            transform: translateX(-34.5vw);
+        }
+    }
+}

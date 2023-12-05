@@ -1,0 +1,247 @@
+.ourMission-container{
+    text-align: center;
+    .maki-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .makiTop-container{
+        .makiTopLeft{
+            width: 35%;
+        }
+        .makiTopRight{
+            width: 30%;
+            margin-top: 25%;
+        }
+    }
+    .makiBottom-container{
+        .makiBottomLeft{
+            width: 30%;
+            margin-top: -20%;
+        }
+        .makiBottomRight{
+            width: 35%;
+            margin-top: 5%;
+        }
+    }
+    .makiLeft{
+        margin: 0 8%;
+        animation: animeMakiLeft 8s infinite linear;
+    }
+    .makiRight{
+        margin: 0 8%;
+        animation: animeMakiRight 8s infinite linear;
+    }
+    .titles-container{
+        h1{
+            margin-top: 10%;
+        }
+        h2{
+            margin: 20px 10%;
+
+        }
+    }
+    .DesktopSandwich{
+        display: none;
+    }
+    .DesktopFireForce{
+        display: none;
+    }
+}
+@keyframes animeMakiLeft {
+    0% {
+        transform: translateX(0px)translateY(0px);
+        animation-timing-function: linear;
+    }
+    25% {
+        transform: translateX(0px)translateY(40px);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: translateX(26px)translateY(5px);
+        animation-timing-function: linear;
+    }
+    75% {
+        transform: translateX(0px)translateY(30px);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: translateX(0px)translateY(0px);
+    }
+}
+
+@keyframes animeMakiRight {
+    0% {
+        transform: translateX(0px)translateY(0px);
+        animation-timing-function: linear;
+    }
+    25% {
+        transform: translateX(0px)translateY(-30px);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: translateX(-20px)translateY(0px);
+        animation-timing-function: linear;
+    }
+    75% {
+        transform: translateX(0px)translateY(-30px);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: translateX(0px)translateY(0px);
+    }
+}
+@media (min-width: 768px){
+    .ourMission-container{
+        position: relative;
+        .maki-container{
+            display: flex;
+            justify-content: center;
+        }
+        .makiTop-container{
+            .makiTopLeft{
+                width: 14.417vw;
+                animation: animeMakiTopLeft 8s infinite linear;
+            }
+            .makiTopRight{
+                width: 12.5vw;
+                margin-top: 0;
+                animation: animeMakiTopRight 8s infinite linear;
+            }
+        }
+        .makiBottom-container{
+            .makiBottomLeft{
+                width: 14.584vw;
+                margin-top: 0;
+                animation: animeMakiBottomRight 8s infinite linear;
+                
+            }
+            .makiBottomRight{
+                width: 14.75vw;
+                margin-top: 0;
+                animation: animeMakiBottomLeft 8s infinite linear;
+            }
+        }
+        .makiLeft{
+            margin: 0 0;
+            animation:none
+        }
+        .makiRight{
+            margin: 0 0;
+            animation: animeMakiRight 8s infinite linear;
+        }
+        .titles-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7vw;
+            width: 100%;
+            margin-bottom: 10vw;
+            h1{
+                margin-top: 0;
+            }
+            h2{
+                margin: 2vw 0;
+                width: 38vw;
+                font-size: 1.6vw;
+            }
+        }
+        .DesktopSandwich{
+            display: block;
+            position: absolute;
+            top: 21.7vw;
+            width: 26.417vw;
+        }
+        .DesktopFireForce{
+            display: block;
+            position: absolute;
+            top: 11.8vw;
+            right: 0;
+            width: 32.334vw;
+        }
+    }
+    @keyframes animeMakiTopLeft {
+        0% {
+            transform: translateX(-17.7vw)translateY(8vw);
+            animation-timing-function: linear;
+        }
+        25% {
+            transform: translateX(-17.7vw)translateY(12vw);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateX(-15vw)translateY(9vw);
+            animation-timing-function: linear;
+        }
+        75% {
+            transform: translateX(-17.7vw)translateY(11vw);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateX(-17.7vw)translateY(8vw);
+        }
+    }
+    @keyframes animeMakiTopRight {
+        0% {
+            transform: translateX(0vw)translateY(-3vw);
+            animation-timing-function: linear;
+        }
+        25% {
+            transform: translateX(0vw)translateY(1vw);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateX(3vw)translateY(-2vw);
+            animation-timing-function: linear;
+        }
+        75% {
+            transform: translateX(0vw)translateY(0vw);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateX(0vw)translateY(-3vw);
+        }
+    }
+    @keyframes animeMakiBottomLeft {
+        0% {
+            transform: translateX(-48vw)translateY(0vw);
+            animation-timing-function: linear;
+        }
+        25% {
+            transform: translateX(-48vw)translateY(5vw);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateX(-45vw)translateY(2vw);
+            animation-timing-function: linear;
+        }
+        75% {
+            transform: translateX(-48vw)translateY(4vw);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateX(-48vw)translateY(0vw);
+        }
+    }
+    @keyframes animeMakiBottomRight {
+        0% {
+            transform: translateX(3vw)translateY(-10vw);
+            animation-timing-function: linear;
+        }
+        25% {
+            transform: translateX(3vw)translateY(-5vw);
+            animation-timing-function: linear;
+        }
+        50% {
+            transform: translateX(6vw)translateY(-8vw);
+            animation-timing-function: linear;
+        }
+        75% {
+            transform: translateX(3vw)translateY(-4vw);
+            animation-timing-function: linear;
+        }
+        100% {
+            transform: translateX(3vw)translateY(-10vw);
+        }
+    }
+}

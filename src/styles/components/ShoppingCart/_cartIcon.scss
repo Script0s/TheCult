@@ -1,0 +1,32 @@
+.cart-icon-container{
+    display: none;
+}
+.cart-icon-container.visible{
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 1000;
+.cart-icon{
+    width: 60px;
+    position: relative;
+    .cart-icon-counter{
+        position: absolute;
+        right: -6px;
+        bottom: 0px;
+        text-align: center;
+        background-color: #fa007a;
+        color: #faf5e5;
+        min-width: 24px;
+        height: 24px;
+        font-family: Arial,Helvetica,sans-serif;
+        line-height: 24px;
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 0 5px;
+    }
+    img {
+        width: 100%;
+    }
+}
+}

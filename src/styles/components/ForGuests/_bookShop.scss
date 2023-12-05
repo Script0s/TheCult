@@ -1,0 +1,49 @@
+.BookShop-container{
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+    h2{
+        width: 72vw;
+    }
+    .button-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 6vw;
+        button{
+            margin: 0 2vw;
+            min-width: 110px;
+            min-height: 34px;
+        }
+    }
+    .jujutsuKaisen{
+        margin-top: 6vw;
+        width: 157.187vw ;
+    }
+}
+@media (min-width: 768px){
+    .BookShop-container{
+        h2{
+            width: 46.75vw;
+        }
+        .button-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2vw;
+            button{
+                margin: 0 1vw;
+                min-width: 110px;
+                min-height: 40px;
+            }
+        }
+        .jujutsuKaisen{
+            margin-top: 1vw;
+            width: 84.75vw;
+        }
+    }
+}

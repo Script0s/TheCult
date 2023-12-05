@@ -1,0 +1,14 @@
+.loader-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .kunai{
+        min-width: 50px;
+        width: 10%;
+    }
+    .naruto-kunai{
+        min-width: 108px;
+        width: 22%;
+    }
+}
