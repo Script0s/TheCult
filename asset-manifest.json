@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thecult/static/css/main.10065c1b.css",
-    "main.js": "/thecult/static/js/main.58dcab78.js",
+    "main.css": "/thecult/static/css/main.d84551f4.css",
+    "main.js": "/thecult/static/js/main.1b5735bb.js",
     "static/media/HomeVideo.mp4": "/thecult/static/media/HomeVideo.0679bd3054472aa43b48.mp4",
     "static/media/OurStoryVideo.mp4": "/thecult/static/media/OurStoryVideo.87ac7667d7efe5b6733c.mp4",
     "static/media/giftVoucherMobile.svg": "/thecult/static/media/giftVoucherMobile.fd4b2499d0a08f97565404dbb07681be.svg",
@@ -192,11 +192,11 @@
     "static/media/RemoveButton.svg": "/thecult/static/media/RemoveButton.226a94f2dd0e4df28d618f91bedb840e.svg",
     "static/media/IncrementButton.svg": "/thecult/static/media/IncrementButton.2c85443eac4482a68c08fc253c3c5f5c.svg",
     "static/media/DecrementButton.svg": "/thecult/static/media/DecrementButton.aa2ed094b1cf2c4e0276a8beb3f901d8.svg",
-    "main.10065c1b.css.map": "/thecult/static/css/main.10065c1b.css.map",
-    "main.58dcab78.js.map": "/thecult/static/js/main.58dcab78.js.map"
+    "main.d84551f4.css.map": "/thecult/static/css/main.d84551f4.css.map",
+    "main.1b5735bb.js.map": "/thecult/static/js/main.1b5735bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.10065c1b.css",
-    "static/js/main.58dcab78.js"
+    "static/css/main.d84551f4.css",
+    "static/js/main.1b5735bb.js"
   ]
 }
