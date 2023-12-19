@@ -59,3 +59,26 @@
         }
     }
 }
+@media (min-width: 768px){
+  .FormDelivery{
+  .input-box {
+    margin-bottom: 50px;
+    font-size: 15px;
+    .error-message{
+      top: 30px;
+    }
+    input {
+      font-size: 15px;
+      height: 21px;
+    }
+    label {
+      span {
+        font-size: 18px;
+      }
+    }
+    &.focused label span {
+      transform: translateY(-30px);
+    }
+  }
+}
+}

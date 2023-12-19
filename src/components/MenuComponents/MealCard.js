@@ -23,9 +23,15 @@ const MealCard = ({ data }) => {
         />
       </div>
       <div className="mealCard-info">
-        <h2 className="title">{data.title}</h2>
+        <h2 className="title" translate="no">
+          {data.title}
+        </h2>
         <p className="info">{data.description}</p>
-        <button className="Rect-buttonMeal" onClick={handleAddToCart}>
+        <button
+          className="Rect-buttonMeal"
+          translate="no"
+          onClick={handleAddToCart}
+        >
           {`€${data.price} - ADD TO BAG`}
         </button>
       </div>

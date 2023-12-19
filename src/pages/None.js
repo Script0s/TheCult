@@ -12,6 +12,8 @@ import DesktopBottomRight from "../img/NonePage/DesktopBottomRight.svg";
 import DesktopBottomLeft from "../img/NonePage/DesktopBottomLeft.svg";
 
 const None = () => {
+  const linkedinUrl =
+    "https://www.linkedin.com/in/alexandre-ghazarian-5341b9249";
   return (
     <div className="none-container">
       <Navigation />
@@ -25,11 +27,15 @@ const None = () => {
         <div className="button-container">
           <div className="leftButton-container">
             <h2>FEEL FREE TO SAY HELLO</h2>
-            <button className="Rect-button">LINKEDIN</button>
+            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+              <button className="Rect-button">LINKEDIN</button>
+            </a>
           </div>
           <div className="rightButton-container">
             <h2>ORDER A WEBSITE</h2>
-            <button className="Rect-button">LINKEDIN</button>
+            <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+              <button className="Rect-button">LINKEDIN</button>
+            </a>
           </div>
         </div>
         <div className="img-none-container">

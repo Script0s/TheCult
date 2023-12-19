@@ -45,7 +45,7 @@ const FormHomePage = () => {
           noValidate
         >
           <InputField
-            label="Your&nbsp;Email"
+            label="Your Email"
             type="email"
             value={state.fields.email}
             onChange={(e) =>
@@ -58,7 +58,7 @@ const FormHomePage = () => {
             errorMessage={state.errors.email}
           />
           <InputField
-            label="Your&nbsp;Name"
+            label="Your Name"
             type="text"
             value={state.fields.name}
             onChange={(e) =>

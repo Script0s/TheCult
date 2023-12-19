@@ -48,7 +48,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             <div className="order-items">
               {cartItems.map((item, index) => (
                 <div key={index} className="order-item">
-                  <h3>{item.titleSideBar}</h3>
+                  <h3 translate="no">{item.titleSideBar}</h3>
                   <div className="quantity-controls">
                     <img
                       className="decrement-button"
@@ -64,7 +64,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                       alt=""
                     />
                   </div>
-                  <p className="price">
+                  <p translate="no" className="price">
                     {(item.price * item.quantity).toFixed(2)}€
                   </p>
                   <img
@@ -85,7 +85,9 @@ const Sidebar = ({ isOpen, onClose }) => {
                 <p className="MinOrder">Minimum order: € 30</p>
               )}
 
-              <p className="SubTotal">Subtotal: € {calculateSubtotal()}</p>
+              <p className="SubTotal" translate="no">
+                Subtotal: € {calculateSubtotal()}
+              </p>
             </div>
           </div>
           {isFormVisible ? (

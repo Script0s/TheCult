@@ -20,7 +20,7 @@ const TextareaField = ({ label, value, onChange }) => {
 
   return (
     <div className={`textarea-box ${isFocused || value ? "focused" : ""}`}>
-      <label>
+      <label translate="no">
         {formattedLabel.split("").map((letter, i) => (
           <span key={i} style={{ transitionDelay: `${i * 30}ms` }}>
             {letter}

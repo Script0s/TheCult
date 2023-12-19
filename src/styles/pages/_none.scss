@@ -15,11 +15,13 @@
             width: 85.625vw;
         }
         .button-container{
+            position: relative;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             width: 100%;
             margin-top: 4vw;
+            z-index: 1;
             .leftButton-container{
                 h2{
                     width: 29.062vw;

@@ -41,8 +41,8 @@ const Footer = () => {
           Beda ·
         </p>
         <div className="link">
-          <p>· Developed by Alexandre Ghazarian ·</p>· <a href="#">Linkedin</a>·{" "}
-          <a href="#">Facebook</a> ·
+          <p>· Developed by Alexandre Ghazarian ·</p>· 
+          <a href="https://www.linkedin.com/in/alexandre-ghazarian-5341b9249" target="_blank" rel="noopener noreferrer"> Linkedin</a> ·
         </div>
       </div>
     </div>

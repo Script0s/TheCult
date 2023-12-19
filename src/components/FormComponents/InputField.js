@@ -25,7 +25,7 @@ const InputField = ({
 
   return (
     <div className={`input-box ${isFocused || value !== "" ? "focused" : ""}`}>
-      <label>
+      <label translate="no">
         {formattedLabel.split("").map((letter, index) => (
           <span key={index} style={{ transitionDelay: `${index * 30}ms` }}>
             {letter}

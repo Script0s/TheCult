@@ -20,7 +20,7 @@ const DatePickerField = ({ label, selectedDate, onChange, errorMessage }) => {
 
   return (
     <div className={`input-box ${isFocused || selectedDate ? "focused" : ""}`}>
-      <label className="label-datepicker">
+      <label className="label-datepicker" translate="no">
         {formattedLabel.split("").map((letter, i) => (
           <span key={i} style={{ transitionDelay: `${i * 30}ms` }}>
             {letter}

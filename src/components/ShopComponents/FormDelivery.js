@@ -160,11 +160,13 @@ const FormDelivery = () => {
       </div>
 
       <div className="order-summary">
-        <p>Subtotal: €{calculateSubtotal()}</p>
+        <p translate="no">Subtotal: €{calculateSubtotal()}</p>
         {state.fields.deliveryMethod === "Ninja Delivery" && (
-          <p>Ninja Delivery: €{ninjaDeliveryCost}</p>
+          <p translate="no">Ninja Delivery: €{ninjaDeliveryCost}</p>
         )}
-        <p>Total: €{calculateTotal(state.fields.deliveryMethod)}</p>
+        <p translate="no">
+          Total: €{calculateTotal(state.fields.deliveryMethod)}
+        </p>
 
         {state.errors.minimumOrderAmount && (
           <div className="error-message">{state.errors.minimumOrderAmount}</div>
