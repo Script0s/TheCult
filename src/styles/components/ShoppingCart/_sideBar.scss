@@ -93,6 +93,7 @@
                 width: 100%;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 padding: 15px 0;
                 h3{
                     width: 255px;
@@ -176,10 +177,10 @@
                 flex-direction: row-reverse;
                 justify-content: center;
                 .FormDelivery{
-                    width: 46.66vw;
+                    width: 560px;
                 }
                 .items-container{
-                    width: 46.66vw;
+                    width: 560px;
                     .order-items{
                         margin-left: 20px;
                         margin-right: 20px;

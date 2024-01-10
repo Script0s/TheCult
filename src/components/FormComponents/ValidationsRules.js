@@ -9,9 +9,13 @@ export const validateEmail = (email) => {
 };
 
 export const validateName = (name) => {
-  const namePattern = "^[A-Za-z ]{2,}$";
+  const namePattern = "^[A-Za-z\u00C0-\u00FF ]{2,}$"; // Permet les lettres avec accents
+  const invalidCharsPattern = "[^A-Za-z\u00C0-\u00FF ]"; // Détecte les caractères spéciaux non autorisés
+
   if (!name.trim()) {
     return "Name cannot be empty.";
+  } else if (new RegExp(invalidCharsPattern).test(name)) {
+    return "Name contains invalid characters.";
   } else if (!new RegExp(namePattern).test(name)) {
     return "Name must be at least two letters.";
   }
